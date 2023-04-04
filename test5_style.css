@@ -1,0 +1,29 @@
+/* 전체 */
+* {margin: 0 auto; padding: 0; list-style: none; text-decoration: none; color:black;}
+a {color : rgb(255, 143, 123);}
+a:hover {color:rgb(255, 0, 0); font-weight: bolder;}
+body {width: 1000px;}
+
+/* 헤더부분 */
+header {height: 150px; margin-top: 40px;}
+header>div {float:left;}
+header>div>img {width: 150px;}
+#search {float: right;}
+#search>input {width: 400px; height: 30px; margin-right: -5px;}
+#search>button {padding: 5px 30px 7px 30px;}
+
+/* 메뉴 */
+.nav {width: 1000px; height: 20px;}
+.nav>li {float: left; width: 200px; text-align: center; padding: 5px 0; position: relative;}
+
+/* 로그인 */
+div {position: relative;}
+div>table {position: absolute; top: 90px; right: -180px;}
+td>input {height: 50px;}
+td>button {padding: 44px 15px;}
+td {text-align: center;}
+
+/* footer */
+footer {order: 1px none solid; color: white;}
+footer>div {padding-bottom: 10px; font-weight: bold;}
+footer>h6 {text-align: center; padding-top: 20px;}

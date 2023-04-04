@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: beige;
+            border: 1px solid yellow;
+            border-radius: 10px;
+            width: 400px;
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+        p {
+            width: 400px;
+            height: 100px;
+            border: 1px solid lightblue;
+            border-radius: 10px;
+            padding-left: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>Q. 질문입니다</div>
+    <p>A. 질문에 대한 답입니다.</p>
+
+    <div>Q. 점심시간은 언제입니까?</div>
+    <p>A. 12:20 ~ 13:30까지 입니다.</p>
+
+    <div>Q. 점심은 뭘 먹을건가요?</div>
+    <p>A. 오봉구국수가 먹고 싶었는데 그새 입맛이 사라져서 고민입니다.</p>
+
+    <div>Q. 평가일은 언제입니까?</div>
+    <p>A. 내일입니다.</p>
+
+    <div>Q. 오늘 끝나고 무엇을 할겁니까?</div>
+    <p>A. 조퇴하고 서연이랑 더현대 가고 한강가서 벚꽃보면서 자전거 탈것입니다.</p>
+
+    <script>
+        $(function() {
+            $("div").click(function() {
+                const p1 = $(this).next();
+                if(p1.css("display")=="none") {
+                    p1.slideDown();
+                } else {
+                    p1.slideUp();
+                }
+            })
+        })
+    </script>
+</body>
+</html>

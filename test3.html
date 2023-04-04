@@ -98,7 +98,8 @@
             
             //아이디
             // console.log(idvalue);
-            let uid = /^[a-zA-Z](?=.*[a-zA-Z])(?=.*[0-9]).{3,11}$/;
+            // let uid = /^[a-zA-Z](?=.*[a-zA-Z])(?=.*[0-9]).{3,11}$/;
+            let uid = /^[a-z][a-z0-9]{3,11}$/i;
             // console.log(uid.test(idvalue));
 
             if(!uid.test(idvalue)) {
@@ -108,12 +109,13 @@
             }
 
             //비밀번호 
-            // console.log(pwdvalue);
-            let upwd = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/;                       
-            // console.log(upwd.test(pwdvalue));
+            console.log(pwdvalue);
+            // let upwd = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/;                       
+            let upwd = /^[a-z\d!@#$%^&*]{8, 15}$/i;
+            console.log(upwd.test(pwdvalue));
 
             if(!upwd.test(pwdvalue)) {
-                // console.log("양식에 맞춰 다시 입력하세요.");
+                console.log("양식에 맞춰 다시 입력하세요.");
                 alert("비밀번호 양식에 맞춰 다시 입력하세요.");
                 return false;
             }

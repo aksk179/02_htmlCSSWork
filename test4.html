@@ -1,64 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KH정보교육원</title>
-    <link href="resources/css/15.common.css" rel="stylesheet">
-    <link href="resources/css/15.mobile.css" rel="stylesheet" media="screen and (max-width:600px)">
-    <link href="resources/css/15.tablet.css" rel="stylesheet" media="screen and (min-width:601px) and (max-width:1199px)">
-    <link href="resources/css/15.pc.css" rel="stylesheet" media="screen and (min-width:1200px)">
+    <title>Document</title>
+    <style>
+        #table1 {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        #td1 {
+            border: 1px solid;
+        }
+        #td2 {
+            padding-right: 50px;
+        }
+        #id {
+            position: absolute;
+            right: 100px;
+            top: 50px;
+        }
+        #div {
+            height: 400px;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="https://www.iei.or.kr/resources/images/common/top_logo_s.jpg" alt="KH정보교육원 로고" id="logo">
-        <form action="login.do">
-            id <input name="id" size="15">&emsp; 
-            pw <input type="password" name="pw" size="15">
-            <input type="submit" value="로그인">
-        </form>
-        <img src="resources/img/titleImg.jpg" id="titleImg">
-    </header>
-    <nav class="navi">
-        <a href="#">교육원소개</a>
-        <a href="#">국비지원과정</a>
-        <a href="#">커뮤니티</a>
-        <a href="#">마이페이지</a>
-    </nav>
-    <section>    
-        <h3>KH정보교육원 소개</h3>
-        <article>
-            <h4>About this school</h4>
-            <p>1998년에 개원한 KH정보교육원은 실업자 재취업 교육을 통해서 실업극복과 경제 활성화에 기여했고, IT교육의 새로운 기준을 제시했습니다.</p>
-            <p>KH정보교육원은 최적의 교육환경을 통해 능력 중심의 기술인재를 양성하고, </p>
-            <p>NCS기반의 실무중심 교과과정 및 다양한 취업지원 시스템과 산학협력 활동을 시행하고 있습니다.</p>
-            <p>최고의 IT전문가가 되고 싶다면, KH정보교육원의 문을 두드리십시오. KH가 함께 도와드리겠습니다.</p>
-        </article>
-        <article>
-            <h4>OUR MISSION</h4>
-            <p>기술교육을 통해 최적화된 인재양성</p>
-            <p>전문적인 기술교육훈련을 통해 국가사회 발전과 근로자의 자아실현에 이바지하며</p>
-            <p>전문인 양성과 취업알선 및 실업에 관한 다양한 사업과 연구를 지속</p>
-            <p>국제화, 정보화 시대에 맞춰 근로자 및 실직자들의 직업능력개발 교육 사업을 시행하고</p> 
-            <p>지식산업 사회에 대비하는 우리사회의 준비와 노력에 일조</p>
-        </article>
-    </section>
-    <aside>
-        <img src="resources/img/side1.png" alt="img1">
-        <img src="resources/img/side2.png" alt="img2">
-        <img src="resources/img/side3.png" alt="img3">
-    </aside>
-    <footer>
-        <p>KH정보교육원 | 사업자등록번호 : 851-87-00622 | 서울 강남 제2014-01호 | 대표자 : 양진선 | 책임자 : 최홍석 |  개인정보관리책임자 : 양진선</p>
-        <p>
-            강남지원 1관 : 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F, 3F, 4F, 5F, 6F<br>
-            강남지원 2관 : 서울특별시 강남구 테헤란로10길 9 그랑프리 빌딩 4F, 5F, 7F<br>
-            강남지원 3관 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F<br>
-            종로지원 : 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F<br>
-            당산지원 : 서울특별시 영등포구 선유동2로 57 이레빌딩(구관) 19F, 20F<br>
-        </p>
-        <p>Copyright © 1998-2023 KH Information Educational Institute All Right Reserved</p>
-    </footer>
+    <div style="width:1000px; margin: 0 auto;">
+        <div style="float: left; margin-right: 370px;">
+            <img src="https://www.iei.or.kr/resources/images/common/top_logo_s.jpg" />
+        </div>
+        <div>
+            <table id="table1">
+                <tr>
+                    <td style="width: 200px;"></td>
+                    <td id="td1">검색</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <table style="margin-left: 150px;">
+            <tr>
+                <td id="td2">소개</td>
+                <td id="td2">과정소개</td>
+                <td id="td2">취업지원</td>
+                <td id="td2">커뮤니티</td>
+                <td id="td2">찾아오는 길</td>
+            </tr>
+        </table>
+
+        <div id="div">
+            <div id="id">
+                <table id="table1">
+                    <tr>
+                        <td id="td1" colspan="2"><font color="gray">아이디 입력</font></td>
+                        <td id="td1" rowspan="2">로그인</td>
+                    </tr>
+                    <tr>
+                        <td id="td1" colspan="2"><font color="gray">비밀번호 입력</font></td>
+                    </tr>
+                    <tr>
+                        <td style="border-left: hidden; border-right: hidden; border-bottom: hidden;" colspan="3">회원가입 &emsp; ID/PWD찾기</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="background-color: rgba(236, 236, 236, 0.489); width: 830px; padding: 10px;">
+            이용약관 &emsp;|&emsp; 개인정보취급방침 &emsp;|&emsp; 인재채용문의 &emsp;|&emsp; 훈련비 게시
+        </div>
+        <footer>
+            <h5 style="color: rgb(90, 90, 90);">
+                KH정보교육원 | 사업자등록번호 : 851-87-00622 | 서울 강남 제2014-01호 | 대표자 : 양진선 | 책임자 : 최홍석 | 개인정보관리책임자 : 양진선
+            </h5>
+            <h5 style="color: rgb(149, 149, 149);">
+                강남지원 1관 : 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F, 3F, 4F, 5F, 6F<br>
+                강남지원 2관 : 서울특별시 강남구 테헤란로10길 9 그랑프리 빌딩 4F, 5F, 7F<br>
+                강남지원 3관 : 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F<br>
+                종로지원 : 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F<br>
+                당산지원 : 서울특별시 영등포구 선유동2로 57 이레빌딩(구관) 19F, 20F<br>
+            </h5>
+            <h6 style="color: rgb(174, 173, 173);">
+                Copyright © 1998-2023 KH Information Educational Institute All Right Reserved
+            </h6>
+        </footer>    
+    </div>
 </body>
 </html>

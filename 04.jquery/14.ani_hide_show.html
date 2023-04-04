@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+    src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+    integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>시각적인 효과(Effect 메서드)</h1>
+    <p>페이지 내에 애니메이션 효과를 주기 위해 사용되는 메서드</p>
+
+    <h3>* show(), hide(), toggle()</h3>
+    <p>선택된 요소가 점점 커지면서 보여지고, 점점 작아지면서 사라지게 하는 메서드</p>
+
+    <button id="hide">숨기기</button>
+    <button id="show">보여주기</button>
+    <button id="toggle">토글</button>
+
+    <br><br>
+
+    <img id="img1" src="../01.html/resources/img/cat1.jpg">
+
+    <div id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium porro sunt accusamus, labore sed quas nam nesciunt quia illum. Accusamus aliquid est sapiente eius, quia omnis amet nobis earum.
+        Sint expedita, voluptatibus numquam ut fuga a accusamus quae et iste eum rem ullam consequatur? Sunt debitis tempora dolore eaque, totam pariatur magnam tempore, facilis laborum placeat at commodi fuga!
+        Mollitia quasi culpa atque enim ab magnam error? Neque dicta et delectus officiis atque quia distinctio molestiae in beatae molestias iure ipsam rem quisquam soluta explicabo, sapiente ipsa dolor laborum?
+    </div>
+
+    <script>
+        $(function() {
+            $("#hide").click(function() {
+                $("#img1").hide(2000, "easeOutBounce");
+            })
+
+            $("#show").click(function() {
+                $("#img1").show(2000, "easeOutBounce");
+            })
+
+            $("#toggle").click(function() {
+                $("#content").hide(2000);
+            })
+        })
+    </script>
+</body>
+</html>
